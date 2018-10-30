@@ -99,7 +99,7 @@ objects:
               mountPath: "/var/www"
         volumes:
           - name: "var-www"
-            persistenVolumeClaim: "${APP_NAME}-pvc"
+            persistenVolumeClaim:
               claimName: "${APP_NAME}-pvc"
         dnsPolicy: ClusterFirst
         restartPolicy: Always
