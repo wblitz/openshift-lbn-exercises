@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "jpa-student09-pod02"
+  labels:
+    app: "jpa-student09-app02"
+spec:
+  containers:
+  - name: "jpa-student09-container02"
+    image: "debian"

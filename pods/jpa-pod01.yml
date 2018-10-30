@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "jpa-student09-pod01"
+  labels:
+    app: "jpa-student09-app"
+spec:
+  containers:
+  - name: "jpa-student09-container01"
+    image: "docker-registry.default.svc:5000/openshift/httpd:latest"
+    ports:
+    - containerPort: 8080
+      protocol: TCP
