@@ -95,10 +95,10 @@ objects:
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File
           volumeMounts:
-            - name: "var-www"
-              mountPath: "/var/www"
+            - name: "home"
+              mountPath: "/home"
         volumes:
-          - name: "var-www"
+          - name: "home"
             persistenVolumeClaim:
               claimName: "${APP_NAME}-pvc"
         dnsPolicy: ClusterFirst
